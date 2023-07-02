@@ -3,6 +3,7 @@
 
 
 def pascal_triangle(n):
+    '''defining the function'''
     e_list = []
     # mylist = []
     if n <= 0:
@@ -14,6 +15,3 @@ def pascal_triangle(n):
             mylist.append(elem)
         return(mylist)
     print('\n')
-
-
-print(pascal_triangle(5))
