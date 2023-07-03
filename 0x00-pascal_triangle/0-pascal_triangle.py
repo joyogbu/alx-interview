@@ -15,7 +15,7 @@ def factorial(n):
 # mylist = []
 def pascal_triangle(n):
     '''defining the function'''
-    e_list = [[]]
+    e_list = []
     # mylist = []
     listing = []
     if n <= 0:
