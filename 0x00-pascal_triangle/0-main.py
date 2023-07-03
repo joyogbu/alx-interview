@@ -10,6 +10,7 @@ def print_triangle(triangle):
     """
     for row in triangle:
         print("[{}]".format(",".join([str(x) for x in row])))
+        #print(type(triangle))
 
 
 if __name__ == "__main__":

@@ -19,7 +19,7 @@ def pascal_triangle(n):
     # mylist = []
     listing = []
     if n <= 0:
-        print(e_list)
+        return(e_list)
     else:
         for i in range(n):
             mylist = []
@@ -28,11 +28,4 @@ def pascal_triangle(n):
                 elem = factorial(i) // (factorial(j) * factorial(i - j))
                 mylist.append(elem)
             listing.append(mylist)
-            # print(listing)
-            # print(elem, end=" ")
-            # print(listing)
-            # print(mylist)
-    # print('\n')
     return(listing)
-
-# print(pascal_triangle(5))
