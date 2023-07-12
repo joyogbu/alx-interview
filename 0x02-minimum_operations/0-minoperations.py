@@ -13,4 +13,4 @@ def minOperations(n):
         if char == n:
             break
         char += 1
-    return op
+    return (op - (n//2 - 1))
