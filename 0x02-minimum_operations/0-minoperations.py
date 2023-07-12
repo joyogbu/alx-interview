@@ -3,6 +3,7 @@
 
 
 def minOperations(n):
+    '''defining the function'''
     char = 1
     op = 2
     if n <= 0:
