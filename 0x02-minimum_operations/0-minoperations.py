@@ -4,13 +4,14 @@
 
 def minOperations(n):
     '''defining the function'''
-    char = 1
-    op = 2
-    if n <= 0:
-        return (0)
-    while char < n:
-        op += 1
-        if char == n:
-            break
-        char += 1
-    return (op - (n//2 - 1))
+    factors = []
+    i = 2
+    while i * i <= n:
+        if n % i:
+            i += 1
+        else:
+            n //= i
+            factors.append(i)
+    if n > 1:
+        factors.append(n)
+    return sum(factors)
