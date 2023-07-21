@@ -33,6 +33,6 @@ for line in sys.stdin:
         # print(item_list)
         # print(dictionary)
         print("File size: {}".format(total))
-        for k, v in dictionary.items():
+        for k, v in sorted(dictionary.items()):
             print("{}: {}".format(k, v))
         count = 0
