@@ -8,11 +8,11 @@ import math
 def validUTF8(data):
     '''defining the function'''
     # lis = []
-    # if data == []:
-        # return None
     lis2 = []
     lis3 = []
     for x in data:
+        if type(x) is not int:
+            return False
         lis = []
         while x > 0:
             res = x % 2
