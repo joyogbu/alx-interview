@@ -9,7 +9,7 @@ def validUTF8(data):
     '''defining the function'''
     # lis = []
     if data == []:
-        return False
+        return None
     lis2 = []
     lis3 = []
     for x in data:
