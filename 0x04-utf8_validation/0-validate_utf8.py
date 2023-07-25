@@ -8,8 +8,8 @@ import math
 def validUTF8(data):
     '''defining the function'''
     # lis = []
-    if data == []:
-        return None
+    # if data == []:
+        # return None
     lis2 = []
     lis3 = []
     for x in data:
