@@ -40,6 +40,7 @@ def validUTF8(data):
         # print (list_item.index(0))
         if no == 0:
             if (list_item.index(0)) == 0:
+                # no = 1
                 continue
             elif (list_item.index(0)) == 2:
                 no = 1
@@ -53,4 +54,5 @@ def validUTF8(data):
             if (list_item.index(0)) != 1:
                 return False
             no -= 1
-    return no == 0
+    # return no == 0
+    return True
