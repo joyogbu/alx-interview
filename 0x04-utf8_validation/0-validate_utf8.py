@@ -8,7 +8,7 @@ import math
 def validUTF8(data):
     '''defining the function'''
     # lis = []
-    if data = []:
+    if data == []:
         return False
     if not isinstance(data, list):
         return False
