@@ -23,8 +23,8 @@ def validUTF8(data):
             if x < 0:
                 break
             lis2 = lis[::-1]
-            '''if len(lis2) > 8:
-                lis2.pop(0)'''
+            if len(lis2) > 8:
+                lis2.pop(0)
             lis4 = []
             if len(lis2) < 8:
                 rem = 8 - len(lis2)
@@ -32,7 +32,6 @@ def validUTF8(data):
                     lis4.append(0)
                 # lis2.append(0)
             lis4.extend(lis2)
-    # print(lis4)
         lis3.append(lis4)
         # lis2[:0] = [1]
     # print(lis3)
@@ -43,11 +42,11 @@ def validUTF8(data):
             if (list_item.index(0)) == 0:
                 continue
             elif (list_item.index(0)) == 2:
-                no = 2
+                no = 1
             elif (list_item.index(0)) == 3:
-                no = 3
+                no = 2
             elif (list_item.index(0)) == 4:
-                no = 4
+                no = 3
             else:
                 return False
         else:
