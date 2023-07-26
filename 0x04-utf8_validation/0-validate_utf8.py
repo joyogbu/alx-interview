@@ -37,16 +37,18 @@ def validUTF8(data):
     no = 0
     for list_item in lis3:
         # print (list_item.index(0))
-        if (list_item.index(0)) == 0:
-            continue
-        elif (list_item.index(0)) == 2:
-            no = 2
-        elif (list_item.index(0)) == 3:
-            no = 3
-        elif (list_item.index(0)) == 4:
-            no = 4
+        if no == 0:
+            if (list_item.index(0)) == 0:
+                continue
+            elif (list_item.index(0)) == 2:
+                no = 2
+            elif (list_item.index(0)) == 3:
+                no = 3
+            elif (list_item.index(0)) == 4:
+                no = 4
+            else:
+                return False
         else:
-            return False
-        if (list_item.index(0)) == 1:
-            return False
+            if (list_item.index(0)) == 1:
+                return False
     return True
