@@ -8,7 +8,7 @@ import math
 def validUTF8(data):
     '''defining the function'''
     # lis = []
-    if data = []:
+    if data == []:
         return True
     if not isinstance(data, list):
         return False
@@ -37,7 +37,7 @@ def validUTF8(data):
     # print(lis4)
         lis3.append(lis4)
         # lis2[:0] = [1]
-    print(lis3)
+    # print(lis3)
     no = 0
     for list_item in lis3:
         # print (list_item.index(0))
@@ -53,7 +53,7 @@ def validUTF8(data):
             else:
                 return False
         else:
-            if (list_item.index(0)) == 1:
+            if (list_item.index(0)) != 1:
                 return False
             no -= 1
     return True
