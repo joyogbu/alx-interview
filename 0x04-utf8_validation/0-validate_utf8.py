@@ -49,10 +49,10 @@ def validUTF8(data):
             elif (list_item.index(0)) == 4:
                 no = 3
             else:
-                # return False
-                return no != 0
+                return False
         else:
             if (list_item.index(0)) != 1:
-                return False
+                # return False
+                return no == 0
             no -= 1
     return no == 0
