@@ -8,8 +8,6 @@ import math
 def validUTF8(data):
     '''defining the function'''
     # lis = []
-    if data == []:
-        return True
     if not isinstance(data, list):
         return False
     lis2 = []
