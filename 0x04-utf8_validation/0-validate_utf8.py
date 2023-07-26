@@ -35,7 +35,7 @@ def validUTF8(data):
     # print(lis4)
         lis3.append(lis4)
         # lis2[:0] = [1]
-    print(lis3)
+    # print(lis3)
     no = 0
     for list_item in lis3:
         # print (list_item.index(0))
