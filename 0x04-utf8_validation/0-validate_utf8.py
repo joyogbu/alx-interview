@@ -13,6 +13,8 @@ def validUTF8(data):
     lis2 = []
     lis3 = []
     for x in data:
+        if x == 0:
+            lis.append(0)
         if type(x) is not int:
             return False
         lis = []
