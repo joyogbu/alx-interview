@@ -8,7 +8,7 @@ import math
 def validUTF8(data):
     '''defining the function'''
     # lis = []
-    if type(data) is not list:
+    if not isinstance(data, list):
         return False
     lis2 = []
     lis3 = []
