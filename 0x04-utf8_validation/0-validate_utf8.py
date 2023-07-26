@@ -23,8 +23,8 @@ def validUTF8(data):
             if x < 0:
                 break
             lis2 = lis[::-1]
-            if len(lis2) > 8:
-                lis2.pop(0)
+            '''if len(lis2) > 8:
+                lis2.pop(0)'''
             lis4 = []
             if len(lis2) < 8:
                 rem = 8 - len(lis2)
