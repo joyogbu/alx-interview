@@ -53,5 +53,5 @@ def validUTF8(data):
         else:
             if (list_item.index(0)) != 1:
                 return False
-            # no -= 1
+            no -= 1
     return no == 0
