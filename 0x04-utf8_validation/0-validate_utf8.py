@@ -8,6 +8,8 @@ import math
 def validUTF8(data):
     '''defining the function'''
     # lis = []
+    if data = []:
+        return True
     if not isinstance(data, list):
         return False
     lis2 = []
@@ -24,7 +26,7 @@ def validUTF8(data):
                 break
             lis2 = lis[::-1]
             if len(lis2) > 8:
-                lis2.pop(-1)
+                lis2.pop(0)
             lis4 = []
             if len(lis2) < 8:
                 rem = 8 - len(lis2)
@@ -35,7 +37,7 @@ def validUTF8(data):
     # print(lis4)
         lis3.append(lis4)
         # lis2[:0] = [1]
-    # print(lis3)
+    print(lis3)
     no = 0
     for list_item in lis3:
         # print (list_item.index(0))
