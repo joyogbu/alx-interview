@@ -17,7 +17,7 @@ def validUTF8(data):
     for x in data:
         if x == 0:
             # lis.append(0)
-            return False
+            return True
         if x < 0:
             return False
         if type(x) is not int:
