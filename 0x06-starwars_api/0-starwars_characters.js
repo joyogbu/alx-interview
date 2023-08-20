@@ -9,7 +9,7 @@ request(url, async (error, response, body) => {
   } else {
     const myData = JSON.parse(body).characters;
     myData.forEach(async (character) => {
-      await request(character, function (error, response, body) {
+     	await request(character, function (error, response, body) {
         if (error) {
           console.log(error);
         }
