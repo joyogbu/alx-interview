@@ -7,20 +7,27 @@ request(url, async function (error, response, body) {
   if (error) {
     console.log(error);
   } else {
-    myArray = []
-    const myData = await JSON.parse(body).characters;
-    myData.forEach(async (character) => {
-      const myArr = []
-      myArray = await request(character, async function (error, response, body) {
+    const myData = JSON.parse(body).characters;
+    //myData.forEach(async (character) => {
+     for (const character of myData) {
+	     
+      const p= new Promise(async (resolve, reject) => {
+	     try{ 
+	      await request(character, function (error, response, body) {
         if (error) {
-          console.log(error);
+          reject(error);
         }
-	/*myArr.push(JSON.parse(body).name)*/
-	await Promise.all(myArray)
-        console.log(JSON.parse(body).name);
-	/*await Promise.all(myData)*/
-	/*console.log(res)*/
-      });
-    });
+	resolve(JSON.parse(body))
+	    });
+        //console.log(JSON.parse(body).name);
+      }
+	     //p.then(response => console.log(respnse))
+	    
+	     catch (error) {
+	     console.log(error)
+      };
+  });
+	     p.then(response => console.log(response))
+     }
   }
 });
