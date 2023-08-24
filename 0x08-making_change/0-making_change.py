@@ -16,13 +16,13 @@ def makeChange(coins, total):
     # for i in range(1, total + 1):
     #  res[i] = sys.maxsize
     for i in range(1, total + 1):
-        for j in coins:
-            '''if coins[j] <= i:
+        for j in range(length):
+            if coins[j] <= i:
                 sub_res = res[i - coins[j]]
                 if (sub_res != sys.maxsize and sub_res + 1 < res[i]):
-                    res[i] = sub_res + 1'''
-            if i - j >= 0:
-                res[i] = min(res[i], res[i - j] + 1)
+                    res[i] = sub_res + 1
+            '''if i - j >= 0:
+                res[i] = min(res[i], res[i - j] + 1)'''
     if res[total] == sys.maxsize:
         return -1
     return res[total]
