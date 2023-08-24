@@ -11,8 +11,10 @@ def makeChange(coins, total):
         return 0
     length = len(coins)
     res = [0 for i in range(total + 1)]
-    res = [sys.maxsize] * (total + 1)
+    # res = [sys.maxsize] * (total + 1)
     res[0] = 0
+    for i in range(1, total + 1):
+        res[i] = sys.maxsize
     for i in range(1, total + 1):
         for j in range(length):
             if coins[j] <= i:
