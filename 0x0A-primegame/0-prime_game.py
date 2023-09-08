@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+'''designing a prime game'''
+
+
 def isWinner(x, nums):
+    '''defining the function'''
     max = 2
     # players = 1
     result = []
